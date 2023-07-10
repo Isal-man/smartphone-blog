@@ -1,0 +1,352 @@
+.content-wrapper {
+  > header {
+    border-bottom: 2px solid #aeaeae;
+
+    > * {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    > section > label {
+      display: flex;
+      flex-direction: column;
+      font-size: small;
+      font-weight: bold;
+    }
+
+    & input,
+    select {
+      border: 2px solid #000;
+      border-radius: 8px;
+      height: 24px;
+      padding: 0 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    > .btn-tambah {
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      background-color: #2bff2b;
+      color: #fff;
+      height: 36px;
+      width: 128px;
+
+      &:hover {
+        border: 1px solid #2bff2b;
+        background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+
+    > .btn-keranjang {
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      background-color: #004bfa;
+      color: #fff;
+      height: 36px;
+      width: 158px;
+
+      &:hover {
+        border: 1px solid #004bfa;
+        background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+
+        > p {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+
+    > .btn-wishlist {
+      width: 128px;
+      height: 36px;
+      background-color: black;
+      border-radius: 8px;
+      border: none;
+      color: white;
+
+      &:hover {
+        border: 2px solid red;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
+    > button > svg {
+      margin-left: 16px;
+    }
+
+    > button > p {
+      background-color: #fff;
+      color: #000;
+      border-radius: 100%;
+      width: 21px;
+      height: 21px;
+      padding: 2px;
+    }
+  }
+
+  > main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  > footer {
+    margin-top: 48px;
+
+    > select {
+      height: 24px;
+      border: 2px solid #000;
+      border-radius: 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    > button {
+      background-color: transparent;
+      border: 1px solid #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  > .background-layout > .add {
+    height: 628px;
+
+    > h1 {
+      margin-bottom: 64px;
+    }
+
+    > form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      > label {
+        display: flex;
+        flex-direction: column;
+
+        > input {
+          width: 512px;
+          height: 32px;
+          border-radius: 8px;
+          padding: 8px;
+          border: none;
+
+          &:focus {
+            outline: 2px solid dodgerblue;
+          }
+        }
+
+        > textarea {
+          font-family: "Ubuntu", sans-serif;
+          width: 512px;
+          height: 64px;
+          border-radius: 8px;
+          border: none;
+          padding: 8px;
+          resize: none;
+
+          &:focus {
+            outline: 2px solid dodgerblue;
+          }
+        }
+      }
+
+      > .button-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 32px;
+
+        > button {
+          border: none;
+          border-radius: 8px;
+          background-color: dodgerblue;
+          color: white;
+          width: 96px;
+          height: 32px;
+
+          &:hover {
+            border: 2px solid black;
+            background-color: transparent;
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  > .background-layout > .cart {
+    width: 712px;
+    height: 512px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > h1 {
+      display: flex;
+      justify-content: space-between;
+
+      > button {
+        margin-left: auto;
+        margin-right: 0px;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        padding: 2px;
+
+        &:hover {
+          background-color: red;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    > .cart-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 16px;
+
+      > .image-wrapper {
+        width: 128px;
+
+        > img {
+          width: 212px;
+          height: 212px;
+          object-fit: contain;
+        }
+      }
+
+      > .detail-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 256px;
+
+        > .count-button {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          > button {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            padding: 2px;
+
+            &:hover {
+              background-color: black;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .background-layout > .wishlist {
+    width: 712px;
+    height: 512px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > h1 {
+      display: flex;
+      justify-content: space-between;
+
+      > button {
+        margin-left: auto;
+        margin-right: 0px;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        padding: 2px;
+
+        &:hover {
+          background-color: red;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    > .wishlist-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 16px;
+
+      > .image-wrapper {
+        width: 128px;
+
+        > img {
+          width: 212px;
+          height: 212px;
+          object-fit: contain;
+        }
+      }
+
+      > .detail-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 256px;
+
+        > .count-button {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          > button {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            padding: 2px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

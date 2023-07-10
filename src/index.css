@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+
+  & .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  & .header-wrapper {
+    margin-bottom: 16px;
+  }
+
+  & .footer-wrapper {
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+
+  & .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    > * {
+      display: flex;
+      padding: 8px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  & .card {
+    background-color: #DDE6ED;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  & button, input, select {
+    border: none;
+  }
+}

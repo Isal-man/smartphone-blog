@@ -1,0 +1,44 @@
+.smartphone-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  height: 412px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  > .image-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    > img {
+      width: 212px;
+      height: 212px;
+      object-fit: contain;
+    }
+  }
+
+  > .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    > .btn-wrapper {
+      margin-left: auto;
+      margin-right: 0px;
+
+      > button {
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
